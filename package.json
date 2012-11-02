@@ -23,8 +23,7 @@
     },
     "dependencies": {
         "mocha": ">= 1.6.0",
-        "sinon": ">= 1.4.2",
-        "prompt": ">= 0.2.7"
+        "sinon": ">= 1.4.2"
     },
     "devDependencies": {
         "jshint": ">= 0.9.1"
