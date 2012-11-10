@@ -22,8 +22,8 @@
         "lint": "jshint lib"
     },
     "dependencies": {
-        "mocha": ">= 1.6.0",
-        "sinon": ">= 1.4.2"
+        "mocha": ">= 1.7.0",
+        "sinon": ">= 1.5.0"
     },
     "devDependencies": {
         "jshint": ">= 0.9.1"
