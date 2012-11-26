@@ -10,15 +10,19 @@ The tests run in a Node.js environment; make sure you have that installed.
 
 ### Adapters
 
-In order to test your promise library, you must expose a very minimal adapter interface. These are written as Node.js
-modules with a few well-known exports:
+In order to test your promise library, you must expose a very minimal adapter interface. These are written as Node.js modules with a single export:
 
-- `fulfilled(value)`: creates a promise that is already fulfilled with `value`.
-- `rejected(reason)`: creates a promise that is already rejected with `reason`.
 - `pending()`: creates a tuple consisting of `{ promise, fulfill, reject }`:
   - `promise` is a promise object that is currently in the pending state.
   - `fulfill(value)` moves the promise from the pending state to a fulfilled state, with fulfillment value `value`.
   - `reject(reason)` moves the promise from the pending state to the rejected state, with rejection reason `reason`.
+
+Your adapter *may* additionally provide the following two exports, if your promise library provides specialized/optimized implementations.
+
+- `fulfilled(value)`: creates a promise that is already fulfilled with `value`.
+- `rejected(reason)`: creates a promise that is already rejected with `reason`.
+
+Default implementations of `fulfilled` and/or `rejected` (which rely on `pending`) will be used if your adapter doesn't provide them.
 
 ### From the CLI
 
