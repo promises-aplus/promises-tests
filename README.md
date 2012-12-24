@@ -20,6 +20,11 @@ modules with a few well-known exports:
   - `fulfill(value)` moves the promise from the pending state to a fulfilled state, with fulfillment value `value`.
   - `reject(reason)` moves the promise from the pending state to the rejected state, with rejection reason `reason`.
 
+The `fulfilled` and `rejected` exports are actually optional, and will be automatically created by the test runner using
+`pending` if they are not present. But, if your promise library has the capability to create already-fulfilled or
+already-rejected promises, then you should include these exports, so that the test runner can provide you with better
+code coverage and uncover any bugs in those methods.
+
 ### From the CLI
 
 This package comes with a command-line interface that can be used either by installing it globally with
