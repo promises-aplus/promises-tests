@@ -1,3 +1,8 @@
+<a href="http://promises-aplus.github.com/promises-spec">
+    <img src="http://promises-aplus.github.com/promises-spec/assets/logo-small.png"
+         align="right" alt="Promises/A+ logo" />
+</a>
+
 # Promises/A+ Compliance Test Suite
 
 This suite tests compliance of a promise implementation with the [Promises/A+ specification][].
