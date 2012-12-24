@@ -1,7 +1,7 @@
 {
     "name": "promises-aplus-tests",
     "description": "Compliance test suite for Promises/A+",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenicdenicola.com)",
     "license": "WTFPL",
     "repository": {
