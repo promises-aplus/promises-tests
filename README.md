@@ -30,6 +30,20 @@ The `fulfilled` and `rejected` exports are actually optional, and will be automa
 already-rejected promises, then you should include these exports, so that the test runner can provide you with better
 code coverage and uncover any bugs in those methods.
 
+Alternatively, if your promise library is asynchronously loaded (as is the case of an AMD module), your adapter module can instead export a single function. When run from the CLI, your adapter's function will be passed a callback that can be used to run the tests once your adapter has been loaded.
+
+An example adapter module that loads the adapter via requirejs would look like:
+
+```js
+var requirejs = require("requirejs");
+
+module.exports = function(runTests) {
+    requirejs(["promises/adapter"], function(adapter) {
+        runTests(adapter);
+    });
+};
+```
+
 ### From the CLI
 
 This package comes with a command-line interface that can be used either by installing it globally with
