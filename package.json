@@ -24,7 +24,8 @@
     },
     "dependencies": {
         "mocha": "~1.8.1",
-        "sinon": "~1.6"
+        "sinon": "~1.6",
+        "underscore": "~1.4.4"
     },
     "devDependencies": {
         "jshint": ">= 0.9.1"

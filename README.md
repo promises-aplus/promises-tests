@@ -47,7 +47,8 @@ This package comes with a command-line interface that can be used either by inst
 }
 ```
 
-The CLI takes as its single argument the filename of your adapter file, relative to the current working directory.
+The CLI takes as its first argument the filename of your adapter file, relative to the current working directory. It
+tries to pass through any subsequent options to Mocha, so you can use e.g. `--reporter dot` or `--grep 3.2.6.4`.
 
 ### Programmatically
 
@@ -58,6 +59,14 @@ var promisesAplusTests = require("promises-aplus-tests");
 
 promisesAplusTests(adapter, function (err) {
     // All done; output is in the console. Or check `err` for number of failures.
+});
+```
+
+You can also pass any Mocha options as the second parameter, e.g.
+
+```js
+promisesAplusTests(adapter, { reporter: "dot" }, function (err) {
+  // As before.
 });
 ```
 
