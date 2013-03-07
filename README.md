@@ -60,3 +60,15 @@ promisesAplusTests(adapter, function (err) {
     // All done; output is in the console. Or check `err` for number of failures.
 });
 ```
+
+### Within an Existing Mocha Test Suite
+
+If you already have a Mocha test suite and want to include these tests in it, you can do:
+
+```js
+describe("Promises/A+ Tests", function () {
+    require("promises-aplus-tests").mocha(adapter);
+});
+```
+
+This only works in Node.js, however.
