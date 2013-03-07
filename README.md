@@ -30,6 +30,10 @@ The `fulfilled` and `rejected` exports are actually optional, and will be automa
 already-rejected promises, then you should include these exports, so that the test runner can provide you with better
 code coverage and uncover any bugs in those methods.
 
+Note that the tests will never pass a promise or a thenable as a fulfillment value. This allows promise implementations
+that only have "resolve" functionality, and don't allow direct fulfillment, to implement the `pending().fulfill` and
+`fulfilled`, since fulfill and resolve are equivalent when not given a thenable.
+
 ### From the CLI
 
 This package comes with a command-line interface that can be used either by installing it globally with
