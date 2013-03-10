@@ -34,6 +34,11 @@ Note that the tests will never pass a promise or a thenable as a fulfillment val
 that only have "resolve" functionality, and don't allow direct fulfillment, to implement the `pending().fulfill` and
 `fulfilled`, since fulfill and resolve are equivalent when not given a thenable.
 
+Finally, note that none of these functions, including `pending().fulfill` and `pending.reject()`, should throw
+exceptions. The tests are not structured to deal with that, and if your implementation has the potential to throw
+exceptions—e.g., perhaps it throws when trying to resolve an already-resolved promise—you should wrap direct calls to
+your implementation in `try`/`catch` when writing the adapter.
+
 ### From the CLI
 
 This package comes with a command-line interface that can be used either by installing it globally with
