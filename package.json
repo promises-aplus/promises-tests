@@ -28,6 +28,6 @@
         "underscore": "~1.4.4"
     },
     "devDependencies": {
-        "jshint": ">= 0.9.1"
+        "jshint": "~1.1"
     }
 }
