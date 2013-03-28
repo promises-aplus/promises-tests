@@ -20,7 +20,7 @@ modules with a few well-known exports:
 
 - `fulfilled(value)`: creates a promise that is already fulfilled with `value`.
 - `rejected(reason)`: creates a promise that is already rejected with `reason`.
-- `pending()`: creates a tuple consisting of `{ promise, fulfill, reject }`:
+- `pending()`: creates an Object consisting of `{ promise: Promise, fulfill: Function, reject: Function }`:
   - `promise` is a promise object that is currently in the pending state.
   - `fulfill(value)` moves the promise from the pending state to a fulfilled state, with fulfillment value `value`.
   - `reject(reason)` moves the promise from the pending state to the rejected state, with rejection reason `reason`.
