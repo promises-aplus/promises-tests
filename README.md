@@ -20,8 +20,8 @@ modules with a few well-known exports:
 
 - `fulfilled(value)`: creates a promise that is already fulfilled with `value`.
 - `rejected(reason)`: creates a promise that is already rejected with `reason`.
-- `pending()`: creates a tuple consisting of `{ promise, fulfill, reject }`:
-  - `promise` is a promise object that is currently in the pending state.
+- `pending()`: creates an object consisting of `{ promise, fulfill, reject }`:
+  - `promise` is a promise that is currently in the pending state.
   - `fulfill(value)` moves the promise from the pending state to a fulfilled state, with fulfillment value `value`.
   - `reject(reason)` moves the promise from the pending state to the rejected state, with rejection reason `reason`.
 
@@ -34,7 +34,7 @@ Note that the tests will never pass a promise or a thenable as a fulfillment val
 that only have "resolve" functionality, and don't allow direct fulfillment, to implement the `pending().fulfill` and
 `fulfilled`, since fulfill and resolve are equivalent when not given a thenable.
 
-Finally, note that none of these functions, including `pending().fulfill` and `pending.reject()`, should throw
+Finally, note that none of these functions, including `pending().fulfill` and `pending().reject`, should throw
 exceptions. The tests are not structured to deal with that, and if your implementation has the potential to throw
 exceptions—e.g., perhaps it throws when trying to resolve an already-resolved promise—you should wrap direct calls to
 your implementation in `try`/`catch` when writing the adapter.
