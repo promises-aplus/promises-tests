@@ -5,6 +5,7 @@
     "globalstrict": true,
     "immed": true,
     "indent": 4,
+    "maxlen": 120,
     "newcap": true,
     "noarg": true,
     "node": true,
