@@ -16,6 +16,8 @@
     "unused": true,
     "white": true,
     "globals": {
+        "afterEach": false,
+        "beforeEach": false,
         "describe": false,
         "it": false,
         "specify": false
