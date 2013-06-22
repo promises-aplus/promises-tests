@@ -23,11 +23,11 @@
         "lint": "jshint lib"
     },
     "dependencies": {
-        "mocha": "~1.8.1",
-        "sinon": "~1.6",
+        "mocha": "~1.11.0",
+        "sinon": "~1.7.3",
         "underscore": "~1.4.4"
     },
     "devDependencies": {
-        "jshint": "~1.1"
+        "jshint": "~2.1.3"
     }
 }
