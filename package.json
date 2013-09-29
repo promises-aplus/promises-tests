@@ -19,11 +19,11 @@
         "lint": "jshint lib"
     },
     "dependencies": {
-        "mocha": "~1.11.0",
+        "mocha": "~1.13.0",
         "sinon": "~1.7.3",
-        "underscore": "~1.4.4"
+        "underscore": "~1.5.2"
     },
     "devDependencies": {
-        "jshint": "~2.1.3"
+        "jshint": "~2.1.11"
     }
 }
