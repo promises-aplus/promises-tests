@@ -5,6 +5,7 @@
     "globalstrict": true,
     "immed": true,
     "indent": 4,
+    "maxlen": 120,
     "newcap": true,
     "noarg": true,
     "node": true,
@@ -16,6 +17,8 @@
     "unused": true,
     "white": true,
     "globals": {
+        "afterEach": false,
+        "beforeEach": false,
         "describe": false,
         "it": false,
         "specify": false

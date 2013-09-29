@@ -2,8 +2,8 @@
     "name": "promises-aplus-tests",
     "description": "Compliance test suite for Promises/A+",
     "keywords": ["promises", "promises-aplus"],
-    "version": "1.3.2",
-    "implements": ["Promises/A+ 1.0.0"],
+    "version": "2.0.0",
+    "implements": ["Promises/A+ 1.1.0"],
     "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenicdenicola.com)",
     "license": "WTFPL",
     "repository": {
@@ -19,11 +19,11 @@
         "lint": "jshint lib"
     },
     "dependencies": {
-        "mocha": "~1.11.0",
+        "mocha": "~1.13.0",
         "sinon": "~1.7.3",
-        "underscore": "~1.4.4"
+        "underscore": "~1.5.2"
     },
     "devDependencies": {
-        "jshint": "~2.1.3"
+        "jshint": "~2.1.11"
     }
 }
