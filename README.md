@@ -57,7 +57,7 @@ This package comes with a command-line interface that can be used either by inst
 ```
 
 The CLI takes as its first argument the filename of your adapter file, relative to the current working directory. It
-tries to pass through any subsequent options to Mocha, so you can use e.g. `--reporter dot` or `--grep 3.2.6.4`.
+tries to pass through any subsequent options to Mocha, so you can use e.g. `--reporter spec` or `--grep 2.2.4`.
 
 ### Programmatically
 
