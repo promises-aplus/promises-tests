@@ -16,7 +16,8 @@
         "promises-aplus-tests": "lib/cli.js"
     },
     "scripts": {
-        "lint": "jshint lib"
+        "lint": "jshint lib",
+        "test": "mocha"
     },
     "dependencies": {
         "mocha": "~1.13.0",
