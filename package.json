@@ -20,11 +20,11 @@
         "test": "mocha"
     },
     "dependencies": {
-        "mocha": "~1.13.0",
-        "sinon": "~1.7.3",
-        "underscore": "~1.5.2"
+        "mocha": "~1.17.1",
+        "sinon": "~1.9.0",
+        "underscore": "~1.6.0"
     },
     "devDependencies": {
-        "jshint": "~2.3.0"
+        "jshint": "~2.4.4"
     }
 }
