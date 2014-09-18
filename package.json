@@ -17,7 +17,8 @@
     },
     "scripts": {
         "lint": "jshint lib",
-        "test": "mocha"
+        "test": "mocha",
+        "prepublish": "node ./bin/generate.js"
     },
     "dependencies": {
         "mocha": "~1.21.4",
