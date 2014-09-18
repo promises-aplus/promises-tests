@@ -26,5 +26,8 @@
     },
     "devDependencies": {
         "jshint": "~2.4.4"
+    },
+    "browser": {
+        "mocha": false
     }
 }
