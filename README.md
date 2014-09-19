@@ -11,7 +11,7 @@ This suite tests compliance of a promise implementation with the [Promises/A+ sp
 
 ## How To Run
 
-The tests run in a Node.js environment; make sure you have that installed.
+The tests can run in either a Node.js environment or, if you set things up correctly, in the browser.
 
 ### Adapters
 
@@ -89,4 +89,4 @@ describe("Promises/A+ Tests", function () {
 });
 ```
 
-This only works in Node.js, however.
+This also works in the browser, if you have your Mocha tests running there, as long as you use [browserify](http://browserify.org/).
