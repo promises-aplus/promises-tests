@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "mocha": "~1.21.4",
-        "sinon": "^1.10.3",
+        "sinon": ">=1.10.3 <1.11.0",
         "underscore": "~1.6.0"
     },
     "devDependencies": {
