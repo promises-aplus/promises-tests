@@ -9,6 +9,8 @@ This suite tests compliance of a promise implementation with the [Promises/A+ sp
 
 [Promises/A+ specification]: https://github.com/promises-aplus/promises-spec
 
+Passing the tests in this repo means that you have a Promises/A+ compliant implementation of the `then()` method, and you can display the Promises/A+ logo in your README. You can also [send a pull request](https://github.com/promises-aplus/promises-spec) to have your implementation listed on the [implementations page](https://promisesaplus.com/implementations).
+
 ## How To Run
 
 The tests can run in either a Node.js environment or, if you set things up correctly, in the browser.
