@@ -4,17 +4,14 @@
     "keywords": ["promises", "promises-aplus"],
     "version": "2.1.1",
     "implements": ["Promises/A+ 1.1.0"],
-    "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenic.me)",
+    "author": "Domenic Denicola <d@domenic.me> (https://domenic.me)",
     "license": "WTFPL",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/promises-aplus/promises-tests.git"
-    },
-    "bugs": "https://github.com/promises-aplus/promises-tests/issues",
+    "repository": "promises-aplus/promises-tests",
     "main": "lib/programmaticRunner.js",
-    "bin": {
-        "promises-aplus-tests": "lib/cli.js"
-    },
+    "bin": "lib/cli.js",
+    "files": [
+        "lib/",
+    ],
     "scripts": {
         "lint": "jshint lib",
         "test": "mocha",
