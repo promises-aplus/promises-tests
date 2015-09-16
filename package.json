@@ -10,7 +10,7 @@
     "main": "lib/programmaticRunner.js",
     "bin": "lib/cli.js",
     "files": [
-        "lib/",
+        "lib/"
     ],
     "scripts": {
         "lint": "jshint lib",
