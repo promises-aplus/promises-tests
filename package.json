@@ -18,12 +18,12 @@
         "prepublish": "node ./scripts/generateTestFiles.js"
     },
     "dependencies": {
-        "mocha": "~1.21.4",
+        "mocha": "^2.5.3",
         "sinon": "^1.10.3",
-        "underscore": "~1.6.0"
+        "underscore": "^1.8.3"
     },
     "devDependencies": {
-        "jshint": "~2.4.4"
+        "jshint": "^2.9.2"
     },
     "browser": {
         "mocha": false
