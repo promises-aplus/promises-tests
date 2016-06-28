@@ -7,6 +7,8 @@ var testDirFiles = fs.readdirSync(testsDir);
 
 var outFile = fs.createWriteStream(path.resolve(__dirname, "../lib/testFiles.js"), { encoding: "utf-8" });
 
+outFile.write("\"use strict\";\n");
+
 testDirFiles.forEach(function (file) {
     if (path.extname(file) !== ".js") {
         return;
