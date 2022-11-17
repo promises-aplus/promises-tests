@@ -18,7 +18,7 @@
         "prepublish": "node ./scripts/generateTestFiles.js"
     },
     "dependencies": {
-        "mocha": "^2.5.3",
+        "mocha": "4.0.X",
         "sinon": "^1.10.3",
         "underscore": "~1.8.3"
     },
