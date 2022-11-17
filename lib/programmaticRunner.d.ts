@@ -1,5 +1,5 @@
 // Type definitions for Promises/A+ Compliance Test Suite - https://github.com/promises-aplus/promises-tests
-// Definitions by Shad Sterling - https://github.com/shadsterling
+// Definitions by Shad Sterling - https://github.com/ShadSterling
 
 declare module "promises-aplus-tests" {
 
@@ -14,7 +14,7 @@ declare module "promises-aplus-tests" {
 		export type Adapter<T=any> = {
 			resolved?: (  value: T   ) => Promise<T>,
 			rejected?: ( reason: any ) => Promise<never>,
-			deferred: <T=T>() => Deferred<T>;
+			deferred: <U=T>() => Deferred<U>;
 		}
 		export type Deferred<T=any> = {
 			promise: Promise<T>,
