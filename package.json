@@ -2,7 +2,7 @@
     "name": "promises-aplus-tests",
     "description": "Compliance test suite for Promises/A+",
     "keywords": ["promises", "promises-aplus"],
-    "version": "2.2.1",
+    "version": "2.2.2",
     "implements": ["Promises/A+ 1.1.0"],
     "author": "Domenic Denicola <d@domenic.me> (https://domenic.me)",
     "license": "WTFPL",
@@ -15,8 +15,8 @@
     "scripts": {
         "lint": "jshint lib",
         "test": "mocha",
-        "prepublish": "node ./scripts/generateTestFiles.js",
-        "update": "rm -rf package-lock.json node_modules npm-debug.log lib/testFiles.js; npm i && npm audit && npm run lint && npm run test && npm run prepublish"
+        "regenerate": "rm lib/testFiles.js; node ./scripts/generateTestFiles.js",
+        "update": "rm -rf package-lock.json node_modules; npm i && npm audit && npm run lint && npm run test && npm run regenerate"
     },
     "dependencies": {
         "mocha": "latest",
