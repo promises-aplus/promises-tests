@@ -1,7 +1,8 @@
-export = promisesAPlusTests;
+export = PromisesAPlusTests;
 /** @type { PromisesAPlusTests.Export } */
-declare let promisesAPlusTests: PromisesAPlusTests.Export;
+declare function PromisesAPlusTests(adapter: PromisesAPlusTests.Adapter<any>, mocha_options_or_callback: any | PromisesAPlusTests.Callback, callback_or_omitted: PromisesAPlusTests.Callback | void): void;
 declare namespace PromisesAPlusTests {
+    function mocha(implementation: Adapter<any>): void;
     type Adapter<T> = {
         resolved?: (value: T) => Promise<T>;
         rejected?: (reason: any) => Promise<never>;
@@ -20,7 +21,7 @@ declare namespace PromisesAPlusTests {
     type MochaTester = {
         mocha: PromisesAPlusTests.MochaTestMethod;
     };
-    type MochaTestMethod = (impormentation: PromisesAPlusTests.Adapter<any>) => void;
+    type MochaTestMethod = (implementation: PromisesAPlusTests.Adapter<any>) => void;
     type Tester = PromisesAPlusTests.TesterWithOptions & PromisesAPlusTests.TesterWithoutOptions;
     type TestError = Error & PromisesAPlusTests.MaybeFailureCount;
     type TesterWithOptions = (implementation: PromisesAPlusTests.Adapter<any>, mochaOptions: any, callback?: PromisesAPlusTests.Callback) => void;

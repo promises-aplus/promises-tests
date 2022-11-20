@@ -17,9 +17,9 @@
         "lib/"
     ],
     "scripts": {
-        "test": "mocha",
+        "test": "mocha --reporter dot",
         "regenerate": "rm lib/testFiles.js lib/*.d.ts lib/*/*.d.ts lib/*/*/*.d.ts scripts/*.d.ts test/*.d.ts; node ./scripts/generateTestFiles.js && tsc",
-        "update": "rm -rf package-lock.json node_modules; npm i && npm audit && npm run test && npm run regenerate"
+        "update": "rm -rf package-lock.json node_modules; npm i && npm audit && npm run regenerate && npm run test"
     },
     "dependencies": {
         "mocha": "latest",
