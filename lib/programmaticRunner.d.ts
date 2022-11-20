@@ -1,6 +1,6 @@
 export = promisesAPlusTests;
 /** @type { PromisesAPlusTests.Export } */
-declare var promisesAPlusTests: PromisesAPlusTests.Export;
+declare let promisesAPlusTests: PromisesAPlusTests.Export;
 declare namespace PromisesAPlusTests {
     type Adapter<T> = {
         resolved?: (value: T) => Promise<T>;

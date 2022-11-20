@@ -66,7 +66,7 @@ tries to pass through any subsequent options to Mocha, so you can use e.g. `--re
 The main export of this package is a function that allows you to run the tests against an adapter:
 
 ```js
-var promisesAplusTests = require("promises-aplus-tests");
+let promisesAplusTests = require("promises-aplus-tests");
 
 promisesAplusTests(adapter, function (err) {
     // All done; output is in the console. Or check `err` for number of failures.
