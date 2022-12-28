@@ -1,11 +1,11 @@
 "use strict";
 
-var assert = require("assert");
-var getMochaOpts = require("../lib/getMochaOpts");
+let assert = require("assert");
+let getMochaOpts = require("../lib/getMochaOpts");
 
 describe("getMochaOpts", function() {
     function test(argsString, expectedOpts) {
-        var opts = getMochaOpts(argsString.split(" "));
+        let opts = getMochaOpts(argsString.split(" "));
         assert.deepEqual(opts, expectedOpts);
     }
 

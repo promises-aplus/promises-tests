@@ -1,29 +1,38 @@
 {
-    "name": "promises-aplus-tests",
+    "name": "promises-aplus-tests-refreshed",
     "description": "Compliance test suite for Promises/A+",
     "keywords": ["promises", "promises-aplus"],
-    "version": "2.1.2",
+    "version": "2.3.3",
     "implements": ["Promises/A+ 1.1.0"],
     "author": "Domenic Denicola <d@domenic.me> (https://domenic.me)",
+    "contributors": [
+        "Domenic Denicola <d@domenic.me> (https://domenic.me)",
+        "Shad Sterling <me@shadsterling.com>"
+    ],
     "license": "WTFPL",
-    "repository": "promises-aplus/promises-tests",
+    "repository": "ShadSterling/promises-aplus-tests-refreshed",
+    "homepage": "https://promisesaplus.com/",
     "main": "lib/programmaticRunner.js",
     "bin": "lib/cli.js",
     "files": [
         "lib/"
     ],
     "scripts": {
-        "lint": "jshint lib",
-        "test": "mocha",
-        "prepublish": "node ./scripts/generateTestFiles.js"
+        "test": "mocha --reporter dot",
+        "regenerate": "rm lib/testFiles.js lib/*.d.ts lib/*/*.d.ts lib/*/*/*.d.ts scripts/*.d.ts test/*.d.ts; node ./scripts/generateTestFiles.js && tsc",
+        "update": "rm -rf package-lock.json node_modules; npm i && npm audit && npm run regenerate && npm run test"
     },
     "dependencies": {
-        "mocha": "^2.5.3",
-        "sinon": "^1.10.3",
-        "underscore": "~1.8.3"
+        "mocha": "latest",
+        "sinon": "latest",
+        "underscore": "latest"
     },
     "devDependencies": {
-        "jshint": "^2.9.2"
+        "@tsconfig/node-lts-strictest-esm": "latest",
+        "@types/mocha": "latest",
+        "@types/node": "latest",
+        "@types/underscore": "latest",
+        "typescript": "latest"
     },
     "browser": {
         "mocha": false
