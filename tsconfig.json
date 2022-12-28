@@ -1,0 +1,10 @@
+{
+	"extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"noImplicitAny": false,  //  TODO: add types everywhere
+	},
+}

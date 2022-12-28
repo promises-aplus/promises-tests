@@ -1,5 +1,5 @@
-<a href="http://promises-aplus.github.com/promises-spec">
-    <img src="http://promises-aplus.github.com/promises-spec/assets/logo-small.png"
+<a href="http://promises-aplus.github.io/promises-spec">
+    <img src="http://promises-aplus.github.io/promises-spec/assets/logo-small.png"
          align="right" alt="Promises/A+ logo" />
 </a>
 
@@ -44,13 +44,13 @@ your implementation in `try`/`catch` when writing the adapter.
 ### From the CLI
 
 This package comes with a command-line interface that can be used either by installing it globally with
-`npm install promises-aplus-tests -g` or by including it in your `package.json`'s `devDependencies` and using npm's
+`npm install @refreshed/promises-aplus-tests -g` or by including it in your `package.json`'s `devDependencies` and using npm's
 `scripts` feature. In the latter case, your setup might look something like
 
 ```json
 {
     "devDependencies": {
-        "promises-aplus-tests": "*"
+        "@refreshed/promises-aplus-tests": "*"
     },
     "scripts": {
         "test": "run-my-own-tests && promises-aplus-tests test/my-adapter"
@@ -66,7 +66,7 @@ tries to pass through any subsequent options to Mocha, so you can use e.g. `--re
 The main export of this package is a function that allows you to run the tests against an adapter:
 
 ```js
-var promisesAplusTests = require("promises-aplus-tests");
+let promisesAplusTests = require("promises-aplus-tests");
 
 promisesAplusTests(adapter, function (err) {
     // All done; output is in the console. Or check `err` for number of failures.

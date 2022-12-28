@@ -1,11 +1,11 @@
 "use strict";
-var fs = require("fs");
-var path = require("path");
+let fs = require("fs");
+let path = require("path");
 
-var testsDir = path.resolve(__dirname, "../lib/tests");
-var testDirFiles = fs.readdirSync(testsDir);
+let testsDir = path.resolve(__dirname, "../lib/tests");
+let testDirFiles = fs.readdirSync(testsDir);
 
-var outFile = fs.createWriteStream(path.resolve(__dirname, "../lib/testFiles.js"), { encoding: "utf-8" });
+let outFile = fs.createWriteStream(path.resolve(__dirname, "../lib/testFiles.js"), { encoding: "utf-8" });
 
 outFile.write("\"use strict\";\n");
 
