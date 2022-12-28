@@ -2,7 +2,7 @@
     "name": "promises-aplus-tests-refreshed",
     "description": "Compliance test suite for Promises/A+",
     "keywords": ["promises", "promises-aplus"],
-    "version": "2.3.2",
+    "version": "2.3.3",
     "implements": ["Promises/A+ 1.1.0"],
     "author": "Domenic Denicola <d@domenic.me> (https://domenic.me)",
     "contributors": [
@@ -11,6 +11,7 @@
     ],
     "license": "WTFPL",
     "repository": "ShadSterling/promises-aplus-tests-refreshed",
+    "homepage": "https://promisesaplus.com/",
     "main": "lib/programmaticRunner.js",
     "bin": "lib/cli.js",
     "files": [

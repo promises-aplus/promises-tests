@@ -1,6 +1,6 @@
 <a href="https://promisesaplus.com/"><img src="https://promisesaplus.com/assets/logo-small.png" align="right" alt="Promises/A+ logo" /></a>
 
-# Promises/A+ Compliance Test Suite
+# Promises/A+ Compliance Test Suite (refreshed)
 
 This suite tests compliance of a promise implementation with the [Promises/A+ specification](https://github.com/promises-aplus/promises-spec).
 
@@ -52,7 +52,7 @@ This package comes with a command-line interface that can be used either by inst
         "promises-aplus-tests-refreshed": "*"
     },
     "scripts": {
-        "test": "run-my-own-tests && promises-aplus-tests test/my-adapter"
+        "test": "run-my-own-tests && promises-aplus-tests-refreshed test/my-adapter"
     }
 }
 ```
@@ -65,7 +65,7 @@ tries to pass through any subsequent options to Mocha, so you can use e.g. `--re
 The main export of this package is a function that allows you to run the tests against an adapter:
 
 ```js
-let promisesAplusTests = require("promises-aplus-tests");
+let promisesAplusTests = require("promises-aplus-tests-refreshed");
 
 promisesAplusTests(adapter, function (err) {
     // All done; output is in the console. Or check `err` for number of failures.
@@ -86,7 +86,7 @@ If you already have a Mocha test suite and want to include these tests in it, yo
 
 ```js
 describe("Promises/A+ Tests", function () {
-    require("promises-aplus-tests").mocha(adapter);
+    require("promises-aplus-tests-refreshed").mocha(adapter);
 });
 ```
 
