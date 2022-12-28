@@ -44,13 +44,13 @@ your implementation in `try`/`catch` when writing the adapter.
 ### From the CLI
 
 This package comes with a command-line interface that can be used either by installing it globally with
-`npm install promises-aplus-tests -g` or by including it in your `package.json`'s `devDependencies` and using npm's
+`npm install @refreshed/promises-aplus-tests -g` or by including it in your `package.json`'s `devDependencies` and using npm's
 `scripts` feature. In the latter case, your setup might look something like
 
 ```json
 {
     "devDependencies": {
-        "promises-aplus-tests": "*"
+        "@refreshed/promises-aplus-tests": "*"
     },
     "scripts": {
         "test": "run-my-own-tests && promises-aplus-tests test/my-adapter"
